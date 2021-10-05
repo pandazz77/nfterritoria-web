@@ -1,0 +1,42 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load cache_bust %}
+
+
+{% block imports %}
+  <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+{% endblock %}
+
+{% block content %}
+<!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.seven---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+  <section class="seven">
+  <div class="flex">
+    <div class="left_cont">
+      <div><p align="left">NFTERRITORIA<br>ALL ABOUT MINERS</p></div>
+    </div>
+    <div class="right_cont">
+      <div class="token">
+        <div class="img"><img src="{% static 'main/img/anchor.png' %}" width="120px"></div>
+        <div class="miners"><div><a href="#Chicken">Chicken miner</a></div><div><a href="#Pig">Pig miner</a></div><div><a href="#Cow">Cow miner</a></div><div><a href="#Ocelot">Ocelot miner</a></div><div><a href="#Redstone">Redstone miner</a></div><div><a href="#Furnace">Furnace miner</a></div><div><a href="#Beacon">Beacon miner</a></div></div>
+      </div>
+    </div>
+  </div> 
+  </section>
+  <!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.seven---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+  <section class="eight">
+  <div class="flex">
+    <div class="b1" id="Chicken"><div class="col_one"><p>Chicken miner</p><div class="img chicken_miner"></div></div><div class="col_two"><div><p>Starting price: 50 wax</p><p>Required for crafting: 540 CKTERR tokens</p> <p>Primary supply: 8000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: wheat, wheat block</p> <p>Resource: seed</p><p> Success chance: 0.1</p></div></div></div>
+    <div class="b1" id="Pig"><div class="col_one"><p>Pig miner</p><div class="img pig_miner"></div></div><div class="col_two"><div><p>Starting price: 100 wax</p><p>Required for crafting: 720 PGTERR tokens</p> <p>Primary supply: 7000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: wheat, wheat block</p> <p>Resource: carrot</p><p> Success chance: 0.2</p></div></div></div>
+    <div class="b1" id="Cow"><div class="col_one"><p>Cow miner</p><div class="img cow_miner"></div></div><div class="col_two"><div><p>Starting price: 150 wax</p><p>Required for crafting: 1080 CWTERR tokens</p> <p>Primary supply: 6000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: wheat, wheat block</p> <p>Resource: cane</p><p> Success chance: 0.3</p></div></div></div>
+    <div class="b1" id="Ocelot"><div class="col_one"><p>Ocelot miner</p><div class="img ocelot_miner"></div></div><div class="col_two"><div><p>Starting price: 200 wax</p><p>Required for crafting: 1440 OCTERR tokens</p> <p>Primary supply: 5000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: wheat, wheat block</p> <p>Resource: fish</p><p> Success chance: 0.4</p></div></div></div>
+    <div class="b1" id="Redstone"><div class="col_one"><p>Redstone miner</p><div class="img redstone_miner"></div></div><div class="col_two"><div><p>Starting price: 250 wax</p><p>Required for crafting: 1800 RSTERR tokens</p> <p>Primary supply: 4000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: coal,coal block</p> <p>Resource: redstone blocks</p><p> Success chance: 0.5</p></div></div></div>
+    <div class="b1" id="Furnace"><div class="col_one"><p>Furnace miner</p><div class="img furnace_miner"></div></div><div class="col_two"><div><p>Starting price: 300 wax</p><p>Required for crafting: 1512 FCTERR tokens</p> <p>Primary supply: 3000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: coal,coal block</p> <p>Resource: gold ingot</p><p> Success chance: 0.6</p></div></div></div>
+    <div class="b1" id="Founder"><div class="col_one"><p>Founder miner</p><div class="img founder_miner"></div></div><div class="col_two"><div><p>Starting price: 500 wax</p><p>Required for crafting: 1728 FDTERR tokens</p> <p>Primary supply: 1000 </p><p>Maximum supply: 10000</p></div><div><p>Fuel: coal,coal block</p> <p>Resource: diamond</p><p> Success chance: 0.8</p></div></div></div>
+  </div>
+  </section>
+{% endblock %}

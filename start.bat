@@ -1,0 +1,1 @@
+python .\nfterritoria\manage.py runserver

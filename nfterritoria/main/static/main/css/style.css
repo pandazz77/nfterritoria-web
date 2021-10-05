@@ -1,0 +1,2185 @@
+@font-face {
+    font-family: 'Uni Sans Heavy Caps';
+	src: url(../shrift/UniSansHeavyCapsItalic.ttf) ;
+    src: url(../shrift/UniSansHeavyCapsItalic.eot);
+    src: url(../shrift/UniSansHeavyCapsItalic.eot?#iefix) format('embedded-opentype'),
+        url(../shrift/UniSansHeavyCapsItalic.woff2) format('woff2'),
+        url(../shrift/UniSansHeavyCapsItalic.woff) format('woff'),
+        url(../shrift/UniSansHeavyCapsItalic.svg#UniSansHeavyCapsItalic) format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Impact';
+	src: url(../shrift/Impact.ttf) ;
+    src: url(../shrift/Impact.eot);
+    src: url(../shrift/Impact.eot?#iefix) format('embedded-opentype'),
+        url(../shrift/Impact.woff2) format('woff2'),
+        url(../shrift/Impact.woff) format('woff'),
+        url(../shrift/Impact.svg#Impact) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MineCrafter 3';
+	src: url(../shrift/MineCrafter-3.ttf) ;
+    src: url(../shrift/MineCrafter-3.eot);
+    src: url(../shrift/MineCrafter-3.eot?#iefix) format('embedded-opentype'),
+        url(../shrift/MineCrafter-3.woff2) format('woff2'),
+        url(../shrift/MineCrafter-3.woff) format('woff'),
+        url(../shrift/MineCrafter-3.svg#MineCrafter-3) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body,html{
+	background: url(../img/fon-html.jpg) ;
+	background-size: cover;
+	background-position: center top;
+	max-height: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow-x:hidden;
+	text-align: center;	
+}
+body div.container{
+	height: auto;
+	min-width: 70%;
+	margin: 0 auto;
+}
+/*<!-------------------------------------------------------------------------------------------------------------
+------------------------------------------header---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ header{
+	background: #101828;
+	border-radius: 0 0 40px 40px;
+	background-position: center top;
+	position: absolute;
+	min-width: 100%;
+	box-shadow: 0 0 30px 5px;
+ }
+ header div.flex div.b a{	
+	display: flex;
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	text-decoration: none;
+	font-size: 30px;
+	color: #fff;
+	transition-property: all;
+	transition-duration: 0.5s;
+}
+header div.flex div.b a:hover{	
+	display: flex;
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	text-decoration: none;
+	color: #2196F3;
+	transform: scale(1.1);
+}
+ header div.flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 0 10px;
+	min-width: 100%;
+	margin: 5px 0;
+}
+.mess{
+	display: flex;
+	flex-direction: column;	
+}
+
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ section div h1{
+	font-family: 'MineCrafter 3', sans-serif;
+	font-size: 74px;
+	color: #fff;
+}
+section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .thirteen div.flex button p{
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-size: 39px;
+	color: #fff;
+	background: none;
+}
+.four div.flex div p, footer div h1, .six h1, .ten div.h1 p{
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	background: none;
+}
+footer div h1{
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background: none;
+}
+section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+	font-family: 'Impact', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	background: none;
+}
+.eight p, .eleven p, .twelve div p, .twelve div a{
+	font-family: 'Impact', sans-serif;
+	font-size: 40px;
+	color: #fff;
+	background: none;
+}
+.seven div.miners a{
+	font-family: 'Impact', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background: none;
+}
+.ten div.b2 p{
+	font-family: sans-serif;
+	font-size: 39px;
+	color: #fff;
+	background: none;
+}
+section.five div.right_cont p, section.five div.right_cont a{
+	font-family: sans-serif;
+	font-size: 19.8px;
+	color: #fff;
+	background: none;
+}
+section.five div.flex{
+	padding-bottom: 10%;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.one---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.one{
+	background: url(../img/fon_z.jpg) no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-height: 100%;
+	max-width: 100%;
+	height: auto;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.one div h1{
+	margin-top: 225px; 
+	margin-bottom: 100px;	
+}
+.one div a{
+	background: url(../img/fon_butt.png);
+	display: inline-table;
+	text-decoration: none;
+	padding: 30px 10px;
+	margin-bottom: 6%;
+	border-radius: 15px 15px;
+	width: 30%;
+	border: 5px solid #fff;
+	box-shadow: 0 0 20px #fff;
+	transition: 1s;
+}
+.one div a:hover{
+	background: url(../img/fon_butt.png);
+	display: inline-table;
+	text-decoration: none;
+	padding: 30px 10px;
+	margin-bottom: 6%;
+	border-radius: 15px 15px;
+	width: 30%;
+	border: 5px solid #2196F3;
+	box-shadow: 0 0 20px #2196F3;
+	transform: scale(1.1);
+}
+.one div div.p p{
+	margin: 0 30%;
+	margin-bottom: 65px;
+}
+.one div div.p p, .one div div p{
+	margin-top: 5px;
+	text-shadow: 5px 5px 15px #000;
+}
+.one div div.flex{
+	display: flex;
+	justify-content: space-around;
+	border-top: 5px solid #fff;
+	margin: 0 20%;
+	margin-bottom: 200px;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.two---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.two{
+	 background: url(../img/enjoy.png) center no-repeat;
+	 background-position: center top;
+	 background-size: 100% auto;
+	 margin: -3% 0;
+	 position: relative;
+	 overflow: hidden;
+ }
+
+.two div iframe{
+	margin-bottom: 30%;
+	margin-top: 30%;
+	width: 1200px;
+	height: 600px;
+ }
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.three---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.three div h1{
+	 margin-bottom: 10%;
+ }
+.three div div.lore{
+	 margin-bottom: 5%;
+ }
+.three div p img{
+	margin: 2% 2%;
+}
+.three span.razd{
+	display: block;
+	background-image: url(../img/fon-razd.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	max-height: 100%;	
+	height: 414px;
+}
+.three div.container{
+	margin: 0 100px;
+}
+  /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.four---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.four div.flex div.left_col div, .four div.flex div.right_col div{
+	 background: #000;
+	 padding: 8%;
+	 position: relative;
+	 z-index: 1;
+}
+.four div.flex div.left_col div{
+	border-radius: 100px 100px 100px 0;
+	border: 3px solid #2196F3;
+	box-shadow: 0 0 20px #2196F3;
+}
+.four div.flex div.right_col div{
+	border-radius: 100px 100px 0 100px;
+	border: 3px solid #ea923e;
+	box-shadow: 0 0 20px #ea923e;
+}
+ .four div.flex{
+	 display: flex; 
+	 margin-top: 5%;
+	 flex: 0 1 auto;
+ }
+.four div.flex div{
+	flex-basis: 50%; 
+}
+.four div.flex div.right_col{
+	margin-top: 32%;
+}
+ .four div.flex div.left_col div.two{
+	margin-top: 102%; 
+	margin-bottom: 87%; 
+}
+.four div.flex div.right_col div.two{
+	margin-top: 92%;
+}
+.four div.href a{
+	text-decoration: none;
+	display: inline-table;
+	background: url(../img/fon_butt.png);
+	border-radius: 15px 15px;
+	width: 30%;
+	border: 5px solid #fff;
+	box-shadow: 0 0 20px #fff;
+	padding: 2%;
+	margin: 10% 0;
+	transition: 1s;
+}
+.four div.href a:hover{
+	text-decoration: none;
+	display: inline-table;
+	background: url(../img/fon_butt.png);
+	border-radius: 15px 15px;
+	width: 30%;
+	border: 5px solid #fff;
+	padding: 2%;
+	margin: 10% 0;
+	border: 5px solid #ea923e;
+	box-shadow: 0 0 20px #ea923e;
+	transform: scale(1.1);
+}
+
+  /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.five---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.five div.total label{
+	width: 60px;
+}
+.five div.total p{
+	margin-left: -157px; 
+	margin-top: -6px; 
+	width: 400px;
+	word-spacing: 100px;
+}
+.five div.right_cont div.unstake a{
+	display: flex;
+	color: #ce4242;
+	flex: 0 1 auto;
+	align-items: center;
+	border: none;
+}
+.five div.right_cont div.unstake a::after{
+	color: #65e665;
+}
+.five div.right_cont div.miner{
+	display: flex;
+	flex: 0 1 auto;
+	border: 3px solid #fff;
+	border-radius: 10px 0 0 10px;
+	border-right: none;
+	padding: 5px;
+	padding-left: 10px;
+	align-items: center;	
+}
+.five div.right_cont div.staked{
+	display: none;
+	flex: 0 1 auto;
+	border: 3px solid #fff;
+	border-radius: 10px 0 0 10px;
+	border-right: none;
+	padding: 5px;
+	padding-left: 10px;
+	align-items: center;	
+}
+.five div.right_cont div.unstake{
+	border-top: none;
+}
+	
+.five div.right_cont div.token div.miners{
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 10px 0 10px;
+}
+.five div.right_cont div.token div.money{
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: center;
+}
+.five div.right_cont div.token div.money_img{
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	margin: 0 5px 0 10px;
+	align-items: center;
+}
+.five div.right_cont div.token div.money_img div img{
+	display: block;
+	width: 23.2px;
+}
+.five a{
+	display:inline-block;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px;
+	padding: 5px;
+}
+.bl-1{
+	height: 100px;
+	padding: 50px;
+	background: #bfbfbf;
+	font-size: 40px;
+	text-align: center;
+}
+
+.bl-2{
+	height: 100px;
+	padding: 50px;
+	background: #118c4e;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+ /* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+.five div.left_cont div.login p{
+	 margin-top: 20px;
+	 font-size: 20px;
+}
+.five div.total p{
+	 font-size: 40px;
+}
+.five div.total button{
+	height: 38px;
+}
+.five div.right_cont p{
+	font-size: 20px;
+}
+.five div.flex{
+	margin-top: 10%;
+	display: flex;
+}
+.five div.left_cont{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 30%;
+	flex-basis: 50%;
+	margin-left: 50px;
+}
+.five div.left_cont button{
+	background: none;
+	border: none;
+	height: 55px;
+	margin-left: -10px;
+	cursor: pointer;
+}
+
+.five div.right_cont{
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-basis: 50%;
+	position: relative;
+	z-index: 1;
+}
+.five div.right_cont div.white{
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	align-items: flex-start;
+	border: 3px solid #fff;
+	border-radius: 10px 0 0 10px;
+	border-right: none;
+	border-bottom: none;
+	padding: 10px;
+	align-items: center;
+}
+.five div.right_cont div.white div.img{
+	display: flex;
+	flex: 0 1 auto;
+	align-items: center;
+}
+.five div.right_cont div.white div.img img{
+	padding-right: 10px;
+}
+.five div.right_cont div.white div.wh img{
+	padding-left: 10px;
+}
+.five div.right_cont div.white div.wh{
+	display: flex;
+	flex: 0 1 auto;
+	align-items: center;
+}
+.five div.right_cont div.white img{
+	display: block;
+	width: 30px;
+}
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.six---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ .six h1{
+	 margin-top: 2%;
+	 padding: 40px 35%;
+	 border-top: 3px solid #fff;
+}
+.six a{
+	display: inline-block;
+	margin-bottom: 13px;
+	font-size: 18px;
+	background: #ea923e;
+	border-radius: 10px;
+	padding: 2px 8px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+}
+.six a:hover{
+	display: inline-block;
+	margin-bottom: 13px;
+	font-size: 18px;
+	background: #e38116;
+	border-radius: 10px;
+	padding: 2px 8px;
+	text-decoration: none;
+}
+.six p{
+	margin-bottom: 17px;
+	font-size: 24px;
+}
+.six div.mine a{
+	margin-bottom: 8px;
+	font-size: 15px;
+	border-radius: 10px;
+	padding: 2px 8px;
+}
+.six div.mine p{
+	margin-top: 17px;
+	margin-bottom: 4px;
+	font-size: 24px;
+}
+.six div.flex div.block div.img_white{
+	display: flex;
+	width: 225px;
+	flex: auto;
+}
+.six div.flex div.block div.img_white{
+	background: url(../img/whitelist_token.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.terr_8{
+	background: url(../img/territory8.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.terr_16{
+	background: url(../img/territory16.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.img_miners{
+	display: flex;
+	width: 225px;
+	flex: auto;
+}
+.six div.flex div.block div.chicken_miner{
+	background: url(../img/chicken.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.pig_miner{
+	background: url(../img/pig.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.cow_miner{
+	background: url(../img/cow.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.ocelot_miner{
+	background: url(../img/ocelot.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.redstone_miner{
+	background: url(../img/redstone_generator.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.furnace_miner{
+	background: url(../img/furnace.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex div.block div.founder_miner{
+	background: url(../img/founder.png) no-repeat;
+	background-size: 225px;
+	background-position: center;
+}
+.six div.flex{
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 max-width: 100%;
+	 margin-bottom: 10%;	
+}
+.six div.flex div.block{
+	display: flex;
+	align-items: center;
+	width: 285px;
+	height: 420px;
+	margin: 5% 50px;
+	background: url(../img/card.jpg) no-repeat;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	flex-direction: column;
+}
+
+.six div.flex div.white,.six div.flex div.mine, .six div.flex div.terr{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 90%;
+	justify-content: center;
+}
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.seven---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.seven div.flex{
+	margin-top: 10%;
+	display: flex;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.seven div.flex a{
+	text-decoration: none;
+}
+.seven div.left_cont{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-basis: 70%;
+}
+.seven div.right_cont div.token{
+	display: flex;
+	justify-content: flex-end;
+}
+.seven div.right_cont div.token div.miners{
+	display: flex;
+	flex: auto;
+	align-items: baseline;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.seven div.right_cont div.token div.img{
+	display: flex;
+	flex: auto;
+	align-items: baseline;
+	justify-content: flex-start;
+	margin-right: 20px;
+}
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.eight---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.eight div.flex{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10%;	
+}
+.eight div.flex div.b1{
+	display: flex;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	margin: 50px 0;
+	background: #1a203c;
+	padding: 10px;
+}
+.eight div.flex div.col_one{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%;
+}
+.eight div.flex div.col_two{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 70%;
+	justify-content: space-around;
+}
+.eight div.flex div.col_two div{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.eight div.flex div.col_one div.img{
+	width: 350px;
+	height: 325px;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	margin: 2% auto;
+}
+.eight div.flex div.col_one div.chicken_miner{
+	background: url(../img/chicken.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.pig_miner{
+	background: url(../img/pig.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.cow_miner{
+	background: url(../img/cow.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.ocelot_miner{
+	background: url(../img/ocelot.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.redstone_miner{
+	background: url(../img/redstone_generator.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.furnace_miner{
+	background: url(../img/furnace.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+.eight div.flex div.col_one div.founder_miner{
+	background: url(../img/founder.png) no-repeat;
+	background-size: 300px;
+	background-position: center;
+	background-color: #14192e;
+}
+ /* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.nine---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ .nine div.flex{
+	 margin-bottom: 100px;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.ten---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.ten div.flex div {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.ten div.flex div.h1 p{
+	background: #000;
+	padding: 30px;
+}
+.ten div.flex div.lb1 p{
+	border-radius: 0 25px 0 0;
+	border-top: 3px solid #ea923e;
+	border-right: 3px solid #ea923e;
+	box-shadow: 0 0 20px #ea923e;
+}
+.ten div.flex div.rb1 p{
+	border-radius: 25px 0 0 0;
+	border-top: 3px solid #2196F3;
+	border-left: 3px solid #2196F3;
+	box-shadow: 0 0 20px #2196F3;
+}
+.ten div.flex div.lb div p{
+	border-radius: 0 0 50px 0;
+	border-top: 3px solid #ea923e;
+	border-right: 3px solid #ea923e;
+	border-bottom: 3px solid #ea923e;
+	box-shadow: 0 0 20px #ea923e;
+	margin-right: 28%;
+}
+.ten div.flex div.rb div p{
+	border-radius: 0 0 0 50px;
+	border-top: 3px solid #2196F3;
+	border-left: 3px solid #2196F3;
+	border-bottom: 3px solid #2196F3;
+	box-shadow: 0 0 20px #2196F3;
+	margin-left: 28%;
+}
+
+.ten div.flex div.b2 div p{
+	padding: 30px;
+	background: #000;
+	margin-bottom: 230px;
+	word-spacing: 6px;
+	line-height: 110%;
+}
+#start{
+	margin-right: 65%;
+}
+#get{
+	margin-left: 65%;
+}
+#mining{
+	margin-right: 67%;
+}
+#unstake{
+	margin-left: 52%;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.eleven---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ .eleven h1{
+	 display: inline-block;
+	 border-top: 1px solid #fff;
+	 padding-top: 45px;
+	 width: 90%;
+ }
+.eleven div.flex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+	margin-bottom: 10%;	
+}
+.eleven div.flex div{
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;	
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.twelve---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ .twelve a{
+	 text-decoration: none;
+ }
+.twelve p.sale{
+	display: inline-table;
+	margin-top: 20%;
+	padding-bottom: 2%;
+	border-bottom: 3px solid #fff;
+	width: 75%;
+	text-transform: uppercase;
+}
+.twelve div.fon{
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+}
+.twelve div.a{
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+}
+.twelve div.a a{
+	background: rgba( 0, 0 , 0 , 0.8);
+	border: 3px solid #fff;
+	border-radius: 20px;
+	padding: 20px;
+	transition-property: all;
+	transition-duration: 0.5s;
+}
+.twelve div.a a:hover{
+	background: #2196F3;
+	border: 3px solid #000;
+	color: #000;
+	border-radius: 20px;
+	padding: 20px;
+}
+.twelve div.flex{
+	display: flex;
+	justify-content: space-between;
+	background: rgba( 0, 0 , 0 , 0.4);
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-radius: 20px;
+	padding: 1%;
+	margin: 0 10%;
+	margin-top: 5%;
+	margin-bottom: 20%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.twelve div.flex div.box{
+	background: rgba(255, 255, 255, 0.1	);
+	width: 450px;
+	height: 550px;
+	display: inline-block;
+    overflow: hidden;
+	border: 3px solid #fff; 
+	border-radius: 20px;
+	padding: 1%;
+}
+.twelve div.flex div.scale img.gif{
+	transition: 1s;
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+}
+.twelve div.flex div.scale img.gif:hover{
+	transform: scale(1.5);
+	width: 300px;
+	height: 300px;
+	margin: 100px auto;
+}
+.twelve div.flex div.bl{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 5%;
+	flex-basis: 50%;
+}
+.twelve div.flex div.bl div.p{
+	border: 3px solid #fff;
+	border-radius: 20px;
+	padding: 1%;
+}
+.twelve div.flex div.bl div.p marquee{
+	height: auto;
+	width: auto;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------section.thirteen---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+.thirteen div.flex{
+	 display: flex;
+	 flex-direction: column;
+	 margin-left: 30%;
+	 margin-right: 30%;
+	 margin-top: 15%;
+ }
+ .thirteen div.flex button p{
+	margin-left: 8%;
+}
+ .thirteen div.flex p.memo{
+	 font-size: 20px;
+	 margin-right: 1%;
+	 margin-top: -20px;
+ }
+.thirteen div.flex button{
+	display: inline-block;
+	height: 120px;
+	margin-bottom: 5%;
+	border: 2px solid #000;
+	padding: 25px;
+	border-radius: 20px;
+ }
+ .thirteen div.flex button.but_1{
+	background: url(../img/download_jre.png) center no-repeat;
+	background-size: 100% auto;
+	background-color: #3c3c3c;
+}
+.thirteen div.flex button.but_1:hover{
+	display: inline-block;
+	height: 120px;
+	border: 2px solid #e38116;
+	padding: 25px;
+	border-radius: 20px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	box-shadow: 0 0 20px #e38116;
+	background: url(../img/download_jre.png) center no-repeat;
+	background-size: 100% auto;
+	background-color: #3c3c3c;
+}
+.thirteen div.flex button.but_2{
+	background: url(../img/download_launcher.png) center no-repeat;
+	background-size: 100% auto;
+	background-color: #3c3c3c;
+}
+.thirteen div.flex button.but_2:hover{
+	display: inline-block;
+	height: 120px;
+	border: 2px solid #fff;
+	padding: 25px;
+	border-radius: 20px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	box-shadow: 0 0 20px #fff;
+	background: url(../img/download_launcher.png) center no-repeat;
+	background-size: 100% auto;
+	background-color: #3c3c3c;
+}
+ /*----------------------------------------------------------------------------------------------------------
+------------------------------------------footer---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+footer{
+	background: url(../img/fon-footer.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	min-width: 100%;
+	height: 200px;
+	margin-top: -3%;
+}
+footer div h1{
+	padding-top: 2%;
+	margin-bottom: 1%;
+}
+footer div.flex{
+	display: flex;
+	justify-content: center;
+	flex: 0 1 auto;
+}
+footer div.flex div{
+	flex-basis: 3%;
+}
+footer p{
+	font-size: 13px;
+	margin-top: 2%;
+}
+/* <!-------------------------------------------------------------------------------------------------------------
+------------------------------------------adaptation---------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+ */
+ @keyframes showRight {
+
+	from {right:-100%;}
+	
+	to {right:0;}
+	
+}
+
+@keyframes showLeft {
+
+	from {left:-100%;}
+	
+	to {left:0;}
+	
+}
+
+@keyframes show{
+	0%{
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+ @media (max-width: 1442px){
+	 .section{
+		 max-width: 970px;
+	 }
+	
+	 section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 74px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 39px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, footer div h1, .six h1, .ten div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 40px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 50px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 40px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.right_cont p, section.five div.right_cont a{
+		font-family: sans-serif;
+		font-size: 19.8px;
+		color: #fff;
+		background: none;
+	}
+	 .one div h1{
+		margin-top: 250px; 
+		margin-bottom: 150px;	
+	}
+	.one div a{
+		margin-bottom: 20%;
+	}
+	 .one div div.flex{
+		margin: 0 10%;
+		margin-bottom: 300px;
+	}
+	.two{
+		background-position: center top;
+		background-size: cover;
+		margin: -3% 0;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 20%;
+	}
+   
+   .two div iframe{
+	   margin-bottom: 20%;
+	   margin-top: 50%;
+	   width: 1000px;
+	   height: 600px;
+	}
+	.seven div.left_cont{
+		flex-basis: 60%;
+	}
+	#start{
+		margin-right: 63%;
+	}
+	#get{
+		margin-left: 63%;
+	}
+	#mining{
+		margin-right: 65%;
+	}
+	#unstake{
+		margin-left: 50%;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	footer div.flex div img{
+		width: 60px;
+	}
+	footer div.flex div{
+		flex-basis: 6%;
+	}
+ }
+ @media (max-width: 1025px){
+	.section{
+		max-width: 750px;
+	}
+	.thirteen div.flex{
+		display: flex;
+		flex-direction: column;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 25%;
+	}
+	.thirteen div.flex button p{
+		font-size: 34px;
+	}
+	section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 60px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, footer div h1, .six h1, .ten div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 50px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 50px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 34px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 24px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.right_cont p, section.five div.right_cont a{
+		font-family: sans-serif;
+		font-size: 19.8px;
+		color: #fff;
+		background: none;
+	}
+	header div.flex div.b a{
+		font-size: 25px;
+		transform: rotate(-15deg);
+	}
+	header div.flex div.logo img{
+		width: 200px;
+	}
+	header div.flex div.mess img{
+		width: 40px;
+	}
+	.two{
+		background: url(../img/enjoy.png) no-repeat;
+		background-position: center top;
+		background-size: 100% 100%;
+		margin: -4% 0;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 20%;
+	}
+	.two div iframe{
+		margin-bottom: 10%;
+		margin-top: 30%;
+		width: 500px;
+		height: 300px;
+	 }
+	 .three div div.lore img{
+		 width: 250px;
+	 }
+	footer div.flex div img{
+		width: 65px;
+	}
+	footer div.flex div{
+		flex-basis: 8%;
+	}
+	.five div.flex{
+		margin-top: 20%;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.seven div.flex{
+		margin-top: 20%;
+	}
+	.eight div.flex p{
+		margin-left: 20px;
+	}
+	.seven div.left_cont{
+		flex-basis: 50%;
+	}
+	.seven div.right_cont div.token div.img img{
+		width: 90px;
+	}
+	#start{
+		margin-right: 58%;
+	}
+	#get{
+		margin-left: 58%;
+	}
+	#mining{
+		margin-right: 60%;
+	}
+	#unstake{
+		margin-left: 44%;
+	}
+	.ten div.flex div.lb div p{
+		margin-right: 10%;
+	}
+	.ten div.flex div.rb div p{
+		margin-left: 10%;
+	}
+
+}
+@media (max-width: 769px){
+	.section{
+		max-width: 600;
+	}
+	.thirteen div.flex{
+		display: flex;
+		flex-direction: column;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 25%;
+	}
+	.thirteen div.flex button p{
+		font-size: 30px;
+	}
+	.thirteen div.flex p.memo{
+		font-size: 17px;
+	}
+	.five div.total p{
+		margin-left: -163px; 
+		margin-top: 0px; 
+		width: 400px;
+		word-spacing: 80px;
+	}
+	section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 60px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 25px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, footer div h1, .six h1, .ten div div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 25px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 45px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 40px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.right_cont p, section.five div.right_cont a{
+		font-family: sans-serif;
+		font-size: 19.8px;
+		color: #fff;
+		background: none;
+	}
+	header div.flex div.b a{
+		font-size: 25px;
+		transform: rotate(-30deg);
+	}
+	header div.flex div.logo img{
+		width: 150px;
+	}
+	header div.flex div.mess img{
+		width: 35px;
+	}
+	footer div.flex div img{
+		width: 78px;
+	}
+	footer div.flex div{
+		flex-basis: 12%;
+	}
+	.three div div.lore img{
+		width: 200px;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.seven div.right_cont div.token div.img img{
+		width: 75px;
+	}
+	.eight div.flex div.col_one div.img{
+		width: 250px;
+		height: 225px;
+		background-size: 200px;	
+	}
+	.nine div.right_cont{
+		flex-basis: 60%;
+	}
+	.seven div.left_cont{
+		flex-basis: 48%;
+	}
+	#start{
+		margin-right: 50%;
+	}
+	#get{
+		margin-left: 50%;
+	}
+	#mining{
+		margin-right: 55%;
+	}
+	#unstake{
+		margin-left: 35%;
+	}
+	.ten div.flex div.lb div p{
+		margin-right: 10%;
+	}
+	.ten div.flex div.rb div p{
+		margin-left: 10%;
+	}
+	.ten div.flex div.b2 div p{
+		margin-bottom: 150px;
+	}
+	.twelve div.flex div.scale img.gif{
+		width: 210px;
+		height: 300px;
+		margin: 60px auto;
+	}
+	.twelve div.flex div.scale img.gif:hover{
+		transform: scale(1.1);
+		width: 210px;
+		height: 300px;
+		margin: 60px auto;
+	}
+	.twelve div.flex div.box{
+		width: 450px;
+		height: 400px;
+	}
+}
+@media (max-width: 542px){
+	.section{
+		max-width: 424px;
+	}
+	.thirteen div.flex button{
+		height: 60px;
+		margin-bottom: 5%;
+		border-radius: 10px;
+		padding: 0;
+	 }
+	.thirteen div.flex button p{
+		font-size: 15px;
+	}
+	.thirteen div.flex p.memo{
+		font-size: 10px;
+		margin-right: 1%;
+		margin-top: -10px;
+	}
+	.five div.total label p{
+		font-size: 30px;
+	}
+	.five div.total p{
+		margin-left: -160px; 
+	}
+	section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 30px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total label.switch p, .ten div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 15px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, footer div h1, .six h1, .ten div div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 15px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 25px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 12px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 11px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.right_cont p, section.five div.right_cont a{
+		font-family: sans-serif;
+		font-size: 15px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.flex{
+		padding-bottom: 10%;
+	}
+	header{
+		border-radius: 0 0 10px 10px;
+	}
+	header div.flex div.b a{
+		font-size: 13px;
+		transform: rotate(-15deg);
+	}
+	header div.flex div.logo img{
+		width: 102px;
+	}
+	header div.flex div.mess img{
+		width: 21px;
+	}
+	.one div a{
+		padding: 10px 10px;
+		border: 2px solid #fff;
+	}
+	.one div div.flex{
+		border-top: 2px solid #fff;
+	}	
+	.one div div.flex{
+		margin: 0 10%;
+		margin-bottom: 25%;
+	}
+	.one div div.p p{
+		margin-bottom: 10%;
+	}
+	.two{
+		background-position: center top;
+		background-size: 100% 100%;
+		margin: -4% 0;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 30%;
+	}
+	.two div iframe{
+		margin-bottom: 30%;
+		margin-top: 50%;
+		width: 350px;
+		height: 200px;
+	}
+	.three div.container{
+		margin: 0 30px;
+	}
+	.three div div.lore img{
+		width: 110px;
+	}
+	.three span.razd{
+		height: 100px;
+	}
+	.four div.flex div.left_col div{
+		border-radius: 60px 60px 60px 0;
+		border: 2px solid #2196F3;
+		box-shadow: 0 0 10px #2196F3;
+	}
+	.four div.flex div.right_col div{
+		border-radius: 60px 60px 0 60px;
+		border: 2px solid #ea923e;
+		box-shadow: 0 0 10px #ea923e;
+	}
+	.four div.flex div.right_col{
+		margin-top: 42%;
+	}
+	.four div.flex div.left_col div.two{
+		margin-top: 80%; 
+	}
+	.four div.flex div.right_col div.two{
+		margin-top: 90%;
+	}
+	.four div.href a{
+		border: 2px solid #fff;
+		box-shadow: 0 0 20px #fff;
+		padding: 5%;
+	}
+	.four div.href a:hover{
+		border: 2px solid #fff;
+		padding: 5%;
+		border: 2px solid #ea923e;
+	}
+	footer{
+		height: auto;
+	}
+	footer div.flex div img{
+		width: 40px;
+	}
+	footer div.flex div{
+		flex-basis: 12%;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.five div.left_cont{
+		margin-left: 0px;
+	}
+	.five div.right_cont div p{
+		font-size: 15px;
+	}
+	.five div.right_cont div.white img{
+		display: block;
+		width: 20px;
+	}
+	.five div.right_cont div.token div.money_img div img{
+		display: block;
+		width: 18px;
+	}
+	.five div.left_cont button img{
+		width: 150px;
+		height: 40px;
+	}
+	.five div.left_cont button{
+		height: 40px;
+	}
+	.five div.right_cont div.token{
+		padding-left: 0px;	
+	}
+	.five div.total label.switch{
+	    width: 60px;
+	    height: 28px;
+	}
+	.slider:before {
+		height: 20px;
+		width: 26px;
+	  }
+	.seven div.right_cont div.token div.img img{
+		width: 50px;
+		padding: 50% 0;
+	}
+	.seven div.left_cont{
+		flex-basis: 50%;
+	}
+	.seven div.right_cont div.token div.img img{
+		width: 35px;
+	}
+	.eight div.flex div.col_one div.img{
+		width: 150px;
+		height: 125px;
+		background-size: 120px;	
+	}
+	.eight div.flex div.b1{
+		margin: 25px 0;
+	}
+	.nine div.right_cont{
+		flex-basis: 70%;
+	}
+	.nine div.right_cont div.token div.img img{
+		width: 20px;
+		padding-left: 5px;
+		padding-top: 50px;
+	}
+	#start{
+		margin-right: 50%;
+	}
+	#get{
+		margin-left: 50%;
+	}
+	#mining{
+		margin-right: 50%;
+	}
+	#unstake{
+		margin-left: 30%;
+	}
+	.ten div.flex div.lb div p{
+		margin-right: 5%;
+		border-radius: 0 0 50px 0;
+	}
+	.ten div.flex div.rb div p{
+		margin-left: 5%;
+		border-radius: 0 0 0 50px;
+	}
+	.ten div.flex div.h1 p{
+		padding: 15px;
+	}
+	.ten div.flex div.b2 div p{
+		padding: 20px;
+	}
+	.ten div.flex div.b2 div p{
+		margin-bottom: 90px;
+	}
+	.eleven div.flex div{
+		margin: 5px 0;		
+	}
+	.twelve div.flex div.scale img.gif{
+		width: 180px;
+		height: 200px;
+		margin: 50px auto;
+	}
+	.twelve div.flex div.scale img.gif:hover{
+		transform: scale(1.1);
+		width: 180px;
+		height: 200px;
+		margin: 50px auto;
+	}
+	.twelve div.flex div.box{
+		height: 290px;
+	}
+	.twelve div.flex{
+		flex-wrap: wrap;
+	}
+	.twelve div.flex div.bl{
+		margin: 0;
+	}
+	.twelve div.flex div.bl div.p{
+		box-sizing: border-box;
+		width: 295px;
+		border: 2px solid #fff;	
+		padding: 0;	
+		margin: 0;	
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.twelve div.flex div.bl div.a{
+		width: 300px;
+	}
+	.twelve div.flex div.box{
+		border: 2px solid #fff; 
+	}
+	.twelve div.a a{
+		border: 2px solid #fff;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 376px){
+	.section{
+		max-width: 200px;
+	}
+	section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 30px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 12px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, .six h1, .ten div div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 12px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 11px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 9px;
+		color: #fff;
+		background: none;
+	}
+	section.five div.right_cont p, section.five div.right_cont a{
+		font-family: sans-serif;
+		font-size: 15px;
+		color: #fff;
+		background: none;
+	}
+	header div.flex div.b a{
+		font-size: 12px;
+	}
+	header div.flex div.logo img{
+		width:62px;
+	}
+	header div.flex div.mess img{
+		width: 15px;
+	}
+	.one div h1{
+		margin-top: 155px; 
+		margin-bottom: 70px;	
+	}
+	footer{
+		height: auto;
+	}
+	footer div.flex div img{
+		width: 30px;
+	}
+	footer div.flex div{
+		flex-basis: 10%;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.five div.right_cont div p{
+		font-size: 14px;
+	}
+	.five div.right_cont div.white img{
+		display: block;
+		width: 20px;
+	}
+	.five div.right_cont div.token div.money_img div img{
+		display: block;
+		width: 16px;
+	}
+	.five div.right_cont div.white{
+		padding: 5px;
+	}
+	.five div.flex div.right_cont div.gen a{
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
+	.five div.left_cont button img{
+		width: 130px;
+		height: 37px;
+	}
+	.five div.left_cont button{
+		height: 37px;
+	}
+	footer p{
+		font-size: 10px;
+	}
+	.seven div.left_cont{
+		flex-basis: 55%;
+	}
+	.seven div.right_cont div.token div.img img{
+		width: 25px;
+	}
+	.eight div.flex div.col_one div.img{
+		width: 120px;
+		height: 95px;
+		background-size: 90px;	
+	}
+	.eight div.flex div.b1{
+		margin: 25px 0;
+	}
+	.nine div.right_cont{
+		flex-basis: 80%;
+	}
+	.nine div.right_cont div.token div.img img{
+		width: 20px;
+		padding-left: 5px;
+		padding-top: 50px;
+	}
+	#start{
+		margin-right: 53%;
+	}
+	#get{
+		margin-left: 53%;
+	}
+	#mining{
+		margin-right: 55%;
+	}
+	#unstake{
+		margin-left: 36%;
+	}
+	.twelve div.flex div.bl div.p{
+		width: 250px;
+	}
+	.twelve div.flex div.bl div.a{
+		width: 250px;	
+	}
+}		
+@media (max-width: 322px){
+	.section{
+		max-width: 150px;
+	}
+	.thirteen div.flex button p{
+		font-size: 12px;
+	}
+	.thirteen div.flex p.memo{
+		font-size: 8px;
+		margin-right: 1%;
+		margin-top: -6px;
+	}
+	section div h1{
+		font-family: 'MineCrafter 3', sans-serif;
+		font-size: 25px;
+		color: #fff;
+	}
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div div.b2 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 10px;
+		color: #fff;
+		background: none;
+	}
+	.four div.flex div p, .six h1, .ten div div.h1 p{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 10px;
+		color: #fff;
+		background: none;
+	}
+	footer div h1{
+		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	section.five p, .six p, .six a, .seven p, .eleven h1, .eleven h1, .twelve p.sale{
+		font-family: 'Impact', sans-serif;
+		font-size: 19px;
+		color: #fff;
+		background: none;
+	}
+	.eight p, .eleven p, .twelve div p, .twelve div a{
+		font-family: 'Impact', sans-serif;
+		font-size: 9px;
+		color: #fff;
+		background: none;
+	}
+	.seven div.miners a{
+		font-family: 'Impact', sans-serif;
+		font-size: 8px;
+		color: #fff;
+		background: none;
+	}
+	header div.flex div.b a{
+		font-size: 10px;
+	}
+	header div.flex div.logo img{
+		width:52px;
+	}
+	header div.flex div.mess img{
+		width: 12px;
+	}
+	.one div h1{
+		margin-top: 155px; 
+		margin-bottom: 70px;	
+	}
+	footer div.flex div img{
+		width: 25px;
+	}
+	footer div.flex div{
+		flex-basis: 10%;
+	}
+	footer p{
+		font-size: 10px;
+	}
+	.four div.flex div.left_col div{
+		border-radius: 30px 30px 30px 0;
+		border: 2px solid #2196F3;
+		box-shadow: 0 0 10px #2196F3;
+	}
+	.four div.flex div.right_col div{
+		border-radius: 30px 30px 0 30px;
+		border: 2px solid #ea923e;
+		box-shadow: 0 0 10px #ea923e;
+	}
+	.six p{
+		margin-bottom: 17px;
+		font-size: 24px;
+	}
+	.six a{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #ea923e;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.six a:hover{
+		display: inline-block;
+		margin-bottom: 13px;
+		font-size: 18px;
+		background: #e38116;
+		border-radius: 10px;
+		padding: 2px;
+		text-decoration: none;
+	}
+	.five div.right_cont div p{
+		font-size: 10px;
+	}
+	.five div.right_cont div.white img{
+		display: block;
+		width: 15px;
+	}
+	.five div.right_cont div.token div.money_img div img{
+		display: block;
+		width: 12px;
+	}
+	.five div.left_cont button img{
+		width: 120px;
+		height: 40px;
+	}
+	.five div.left_cont button{
+		height: 40px;
+	}
+	.five div.right_cont div.white{
+		padding: 5px;
+	}
+	.five div.flex div.right_cont div.gen a{
+		font-size: 12px;
+		padding-bottom: 2px;
+	}
+	.seven div.left_cont{
+		flex-basis: 50%;
+	}
+	.eight div.flex div.col_one div.img{
+		width: 100px;
+		height: 85px;
+		background-size: 80px;	
+	}
+	.eight div.flex div.b1{
+		margin: 20px 0;
+	}
+	.nine div.right_cont div.token div.img img{
+		width: 10px;
+		padding-top: 20px;
+		margin: 0;
+	}
+	.nine div.flex{
+		margin-left: 10px;
+	}
+	.nine div.right_cont{
+		flex-basis: 70%;
+	}
+	.seven div.right_cont div.token div.img img{
+		width: 20px;
+		margin-top: 80%;
+	}
+	.ten div.flex div.lb div p{
+		margin-right: 5%;
+		border-radius: 0 0 30px 0;
+	}
+	.ten div.flex div.rb div p{
+		margin-left: 5%;
+		border-radius: 0 0 0 30px;
+	}
+	.ten div.flex div.h1 p{
+		padding: 15px;
+	}
+	.ten div.flex div.b2 div p{
+		padding: 20px;
+	}
+	.twelve div.flex div.bl div.p{
+		width: 220px;
+	}
+	.twelve div.flex div.bl div.a{
+		width: 220px;	
+	}
+}

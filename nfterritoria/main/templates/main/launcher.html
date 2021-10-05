@@ -1,0 +1,38 @@
+{% load static %}
+{% load cache_bust %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nfterritoria</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+  </head>
+  <body>
+    <header>
+        <div class="flex">
+          <div class="logo"><a href="/index"><img src="{% static 'main/img/logo.png' %}" alt="logotipe" width="180px"></a></div>
+            <div class="mess">
+              <div><a href=""><img src="{% static 'main/img/header_ds.png' %}" width="30px"></a></div>
+              <div><a href=""><img src="{% static 'main/img/header_tele.png' %}" width="30px"></div>
+              <div><a href=""><img src="{% static 'main/img/header_tw.png' %}" width="30px"></div>
+            </div>
+          <div class="b"><a href="/map">Map</a></div>
+          <div class="b"><a href="/getting-started">Getting-started</a></div>
+          <div class="b"><a href="/my-nft">My NFT</a></div>
+          <div class="b"><a href="/miners">Miners</a></div>
+          <div class="b"><a href="/sales">Sales</a></div>
+          <div class="b"><a href="/launcher">Launcher</a></div>
+        </div>
+    </header>
+      <section class="thirteen">
+        <div class="flex">
+          <button onclick="window.location.href='https://www.java.com/en/download/'" class="but_1"><p>Download Java 8</p></button>
+          <button onclick="window.location.href='/download-launcher'" class="but_2"><p>Download launcher</p></button>
+          <p class="memo" align="right">*nfterritoria launcher required java 8</p>
+        </div>
+      </section>    
+  </body>
+</html>

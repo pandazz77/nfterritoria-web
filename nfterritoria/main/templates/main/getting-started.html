@@ -1,0 +1,65 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load cache_bust %}
+
+{% block imports %}
+  <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+{% endblock %}
+
+{% block content %}
+  <!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.nine---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+  <section class="seven nine">
+    <div class="flex">
+      <div class="left_cont">
+        <div><p align="left">NFTERRITORIA<br>GETTING STARTED</p></div>
+      </div>
+      <div class="right_cont">
+        <div class="token">
+          <div class="img"><img src="{% static 'main/img/anchor.png' %}" width="120px"></div>
+          <div class="miners"><div><a href="#start">How to start?</a></div><div><a href="#get">How to get territory?</a></div><div><a href="#mining">How to start mining?</a></div><div><a href="#unstake">How to unstake my NFT, tokens?</a></div><div><a href="#FAQ">Frequently Asked Questions</a></div></div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.ten---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+  <section class="ten">
+    <div class="flex show-on-scroll-visible">
+      <div class="left">
+        <div class="lb1 h1" id="start"><p align="left">How to start playing?</p></div>
+        <div class="lb b2" ><div><p align="left">In order for you to start playing, you will need a white list of NFTs, territories and miners that can only be placed on your territory. You can get all this on the "Sales" page, and after the sale on the market.
+          Go to the "My NFT" page, log in and send the received NFTs to the bid, then get a password to log in to the server.
+          <br>
+          Download our launcher and with the help of a code phrase you will get into the wonderful world of NFTerritoria!</p></div></div>
+      </div>
+      <div class="right">
+        <div class="rb1 h1" id="get"><p align="right">How to get territory?</p></div>
+        <div class="b2 rb"><div><p align="right">Take possession of the NFT "territory", then transfer them to the game on the" My NFT " page. when you enter the game and write a command to capture the territory "/nft claim (16 or 8)", by placing it you will capture the territory around you with the radius specified in the characteristics of the NFT. Congratulations, now you officially own a piece of land in the world of NFTerritoria!</p></div></div>
+      </div>
+      <div class="left">
+        <div class="lb1 h1" id="mining"><p align="left">How to start mining?</p></div>
+        <div class="lb b2"><div><p align="left">Take the item you need in your hand, then write the command "/nft unstake"to the chat. The item will disappear from your hand and will be sent to your wallet soon. In the case of tokens, you need to write the same command, the tokens will disappear from your inventory and will be placed in our temporary storage. You can collect tokens from the storage on the "My NFT" page by switching the page content to "staked". In the upper right corner of the page, you will see the number of your tokens that have been transferred to the server, under this information there is a button "unstake all tokens", clicking on which all tokens will be transferred to your wax wallet.</p></div></div>
+      </div>
+      <div class="right last">
+        <div class="rb1 h1 last" id="unstake"><p align="right">How to unstake my NFT, tokens?</p></div>
+        <div class="b2 rb"><div><p align="right">Take the item you need in your hand, then write the command "/nft unstake"to the chat. The item will disappear from your hand and will be sent to your wallet soon. In the case of tokens, you need to write the same command, the tokens will disappear from your inventory and will be placed in our temporary storage. You can collect tokens from the storage on the "My NFT" page by switching the page content to "staked". In the upper-right corner of the page, you will see the number of your frozen tokens, under this information there is a button "unstake all tokens", when you click on this button, all tokens will be transferred to your wax wallet.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.eleven---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+  <section class="eleven">
+    <h1 id="FAQ">FAQ</h1>
+    <div class="flex">
+      <div><div><p align="left">Q: its a question?<br>A: its an answer, answer part, answer part, answer part,</p></div></div>
+      <div><div><p align="left">Q: its a question?<br>A: its an answer, answer part, answer part, answer part,</p></div></div>
+      <div><div><p align="left">Q: its a question?<br>A: its an answer, answer part, answer part, answer part,</p></div></div>
+      <div><div><p align="left">Q: its a question?<br>A: its an answer, answer part, answer part, answer part,</p></div></div>
+    </div>
+  </section>
+{% endblock %}

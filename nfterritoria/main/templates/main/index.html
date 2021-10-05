@@ -1,0 +1,67 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load cache_bust %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+{% endblock %}
+
+{% block content %}
+  <!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.one---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+<section class="one">
+  <div>
+    <h1>welcome to nfterritoriA</h1>
+    <a href="/getting-started">what is nfterritoria?</a>
+    <div class="p"><p>The whole world is in your hands</p></div>
+    <div class="flex" >
+      <div><p>survive</p></div> 
+      <div><p>build your own world</p></div>
+      <div><p>earn</p></div>
+    </div>
+  </div> 
+</section>
+<!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.two---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+
+<section class="two">
+  <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E2LV53mu278" title="YouTube video player" frameborder="1"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</section>
+<!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.three---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+<section class="three">
+  <div class="container">
+    <h1>Lore</h1>
+    <div class="lore"><img src="{% static 'main/img/blockhain.png' %}" alt="blockhain" align="right" >
+      <p align="left">I just woke up from a nap and I feel drafty... - Where am I? ...
+      The first thing I saw was the sea and the mysterious island.
+      And the movie starts playing in my head already.
+      «I need to get to this island, but at first I will find a place to make camp» ,when I said it, I went out to find a good territory.
+      I just woke up from a nap and I feel drafty... - Where am I? ...
+      The first thing I saw was the sea and the mysterious island.
+      And the movie starts playing in my head already.
+      «I need to get to this island, but at first I will find a place to make camp» ,when I said it, I went out to find a good territory.
+      I just woke up from a nap and I feel drafty... - Where am I? ...
+      The first thing I saw was the sea and the mysterious island.
+      And the movie starts playing in my head already.
+      «I need to get to this island, but at first I will find a place to make camp» ,when I said it, I went out to find a good territory.
+    </p>
+    </div>
+  </div>
+  <span class="razd"></span>
+</section>
+<!-------------------------------------------------------------------------------------------------------------
+  ------------------------------------------section.four---------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------->
+<section class="four">
+  <div class="flex">
+    <div class="left_col show-on-scroll"><div class="left"><p>Get whitelist token, territory block, miners</p></div><div class="left two"><p>OWN your territory by “teritorry block”, build your base</p></div><div class="left three last"><p>withdraw your tokens and sell them or craft new Nft</p></div></div>
+    <div class="right_col show-on-scroll"><div class="right oone"><p>transfer your NFT`s to game</p></div><div class="right two"><p>place your miners, Mine resources to keep your miners running</p></div></div>
+  </div>
+  <div class="href"><a href="/getting-started">more information</a></div>
+</section>
+{% endblock %}

@@ -1,0 +1,1 @@
+Space for static files like client, launcher 

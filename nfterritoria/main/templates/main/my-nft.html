@@ -1,0 +1,104 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load cache_bust %}
+
+
+{% block imports %}
+  <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+  <script src="{% static 'main/js/waxjs.js' %}?{% cache_bust %}"></script>
+  <script src="{% static 'main/js/modules/constants.js' %}?{% cache_bust %}"></script>
+  <script src="{% static 'main/js/script.js' %}?{% cache_bust %}"></script>
+  <script src="{% static 'main/js/modules/utils.js' %}?{% cache_bust %}"></script>
+  <script src="{% static 'main/js/modules/websocket.js' %}?{% cache_bust %}"></script>
+  <!-- SweetAlert Dark theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.min.js"></script>
+  
+{% endblock %}
+
+
+
+{% block content %}
+  <script>
+    function toogle(){
+      const checkBox = document.getElementById("switch-box");
+      const tokens_box = document.getElementById("tokens_box");
+      const tokens_staked_box = document.getElementById("tokens_staked_box");
+      const tokens_staked_button = document.getElementById("tokens_staked_button");
+      if(checkBox.checked==true){
+        tokens_box.setAttribute("style","display: none");
+        tokens_staked_box.setAttribute("style","display: flex");
+        tokens_staked_button.setAttribute("style","display: flex");
+      } else {
+        tokens_staked_box.setAttribute("style","display: none");
+        tokens_staked_button.setAttribute("style","display: none");
+        tokens_box.setAttribute("style","display: flex");
+      }
+      
+    }
+  </script>
+
+
+  <section class="five">
+    <div class="flex">
+      <div class="left_cont">
+        <div><p align="left">NFTERRITORIA<br>TOKENS & BLOCKS</p></div>
+        <div class="login"><p>LOGIN</p></div>
+        <button id="Wax_log" onclick=login()><img src="{% static 'main/img/wallet_two.png' %}" alt="Wax_login"></button>
+        <button id="Anch_log"><img src="{% static 'main/img/wallet_one.png' %}" alt="Anchor_login"></button>
+      </div>
+      <div class="right_cont" id="wallet_info" style="position: relative; right:-100%;">
+        <div class="white">
+          <div class="img"><div><img src="{% static 'main/img/stiv.jpg' %}"></div><p id="wallet_name"> wallet.wam</p></div>
+          <div class="wh"><p>whitelist:</p><div></div><img id="whitelist_img_no" src="{% static 'main/img/no.png' %}" style="display: flex;"><img id="whitelist_img_yes" src="{% static 'main/img/yes.png' %}" style="display: none;"></div>
+          <div class="gen"><a href="#" onclick=get_new_passphrase()>get passphrase</a></div>
+        </div>
+        <div class="token miner" id="tokens_box">
+          <div class="miners"><div><p>Chicken token:</p></div><div><p>Pig token:</p></div><div><p>Cow token:</p></div><div><p>Ocelot token:</p></div><div><p>Redstone token:</p></div><div><p>Furnace token:</p></div><div><p>Founder token:</p></div></div>
+          <div class="money"><div><p id="Chicken">0</p></div><div><p id="Pig">0</p></div><div><p id="Cow">0</p></div><div><p id="Ocelot">0</p></div><div><p id="Redstone">0</p></div><div><p id="Furnace">0</p></div><div><p id="Founder">0</p></div></div>
+          <div class="money_img"><div><img src="{% static 'main/img/Chiken_t.png' %}"></div><div><img src="{% static 'main/img/Pig_t.png' %}"></div><div><img src="{% static 'main/img/Cow_t.png' %}"></div><div><img src="{% static 'main/img/Ocelot_t.png' %}"></div><div><img src="{% static 'main/img/Redstone_t.png' %}"></div><div><img src="{% static 'main/img/Furnace_t.png' %}"></div><div><img src="{% static 'main/img/Beacon_t.png' %}"></div></div>
+        </div>
+        <div class="token staked" id="tokens_staked_box">
+          <div class="miners"><div><p class="miner_name">Chicken token staked:</p></div><div><p class="miner_name">Pig token staked:</p></div><div><p class="miner_name">Cow token staked:</p></div><div><p class="miner_name">Ocelot token staked:</p></div><div><p class="miner_name">Redstone token staked:</p></div><div><p class="miner_name">Furnace token staked:</p></div><div><p class="miner_name">Founder token staked:</p></div></div>
+          <div class="money"><div><p id="Chicken_staked">0</p></div><div><p id="Pig_staked">0</p></div><div><p id="Cow_staked">0</p></div><div><p id="Ocelot_staked">0</p></div><div><p id="Redstone_staked">0</p></div><div><p id="Furnace_staked">0</p></div><div><p id="Founder_staked">0</p></div></div>
+          <div class="money_img"><div><img src="{% static 'main/img/Chiken_t.png' %}"></div><div><img src="{% static 'main/img/Pig_t.png' %}"></div><div><img src="{% static 'main/img/Cow_t.png' %}"></div><div><img src="{% static 'main/img/Ocelot_t.png' %}"></div><div><img src="{% static 'main/img/Redstone_t.png' %}"></div><div><img src="{% static 'main/img/Furnace_t.png' %}"></div><div><img src="{% static 'main/img/Beacon_t.png' %}"></div></div>
+        </div>
+        <div class="unstake staked" id="tokens_staked_button"><a href="#">Unstake all tokens</a></div>
+      </div>
+    </div>
+    <div class="total">
+      <!-- Rectangular switch -->
+      <label class="switch">
+        <p>TOTAL STAKED</p>
+        <input type="checkbox" id="switch-box" onclick = toogle()>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </section>
+  <section class="six">
+    <div class="flex">
+      <h1>WHITELIST TOKEN</h1>
+      <div class="white">
+        <div class="block"><div class="img_white"></div><p>Whitelist token</p><div></div><p>You own:<span id="whitelist_text">-</span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><a href="#" onclick=stake_whitelist()>Transfer to game</a></div></div>
+      </div>
+      <h1>MINERS</h1>
+      <div class="mine">
+        <div class="block"><div class="img_miners chicken_miner"></div><p>Chicken miner</p><div></div><p>You own:<span id="chicken_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_chicken()>Craft by tokens</a></div><a href="#" onclick=stake_chicken()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_miners pig_miner"></div><p>Pig miner</p><div></div><p>You own:<span id="pig_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_pig()>Craft by tokens</a></div><a href="#" onclick=stake_pig()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_miners cow_miner"></div><p>Cow miner</p><div></div><p>You own:<span id="cow_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_cow()>Craft by tokens</a></div><a href="#" onclick=stake_cow()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_miners ocelot_miner"></div><p>Ocelot miner</p><div></div><p>You own:<span id="ocelot_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_ocelot()>Craft by tokens</a></div><a href="#" onclick=stake_ocelot()>Transfer to game</a></div></div>
+      </div>
+      <div class="mine">
+        <div class="block"><div class="img_miners redstone_miner"></div><p>Redstone miner</p><div></div><p>You own:<span id="redstone_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_redstone()>Craft by tokens</a></div><a href="#" onclick=stake_redstone()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_miners furnace_miner"></div><p>Furnace miner</p><div></div><p>You own:<span id="furnace_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_furnace()>Craft by tokens</a></div><a href="#" onclick=stake_furnace()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_miners founder_miner"></div><p>Founder miner</p><div></div><p>You own:<span id="founder_miner_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><div><a href="#" onclick=craft_founder()>Craft by tokens</a></div><a href="#" onclick=stake_founder()>Transfer to game</a></div></div>
+      </div>
+      <h1>TERRITORY BLOCKS</h1>
+      <div class="terr">
+        <div class="block"><div class="img_white terr_8"></div><p>8x8 territory</p><div></div><p>You own:<span id="terr_8_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><a href="#" onclick=stake_territory8()>Transfer to game</a></div></div>
+        <div class="block"><div class="img_white terr_16"></div><p>16x16 territory</p><div></div><p>You own:<span id="terr_16_text"> - </span></p><div><a href="https://wax.atomichub.io">Purchase</a></div><div><a href="#" onclick=stake_territory16()>Transfer to game</a></div></div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

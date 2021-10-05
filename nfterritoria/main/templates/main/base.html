@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+{% load static %}
+{% load cache_bust %}
+<html>
+    <head>
+        <title>nfterritoria</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        {% block imports %}{% endblock %}
+    </head>
+
+    <body>
+        <header>
+            <div class="flex">
+              <div class="logo"><a href="/index"><img src="{% static 'main/img/logo.png' %}" alt="logotipe" width="180px"></a></div>
+                <div class="mess">
+                  <div><a href=""><img src="{% static 'main/img/header_ds.png' %}" width="30px"></a></div>
+                  <div><a href=""><img src="{% static 'main/img/header_tele.png' %}" width="30px"></div>
+                  <div><a href=""><img src="{% static 'main/img/header_tw.png' %}" width="30px"></div>
+                </div>
+              <div class="b"><a href="/map">Map</a></div>
+              <div class="b"><a href="/getting-started">Getting-started</a></div>
+              <div class="b"><a href="/my-nft">My NFT</a></div>
+              <div class="b"><a href="/miners">Miners</a></div>
+              <div class="b"><a href="/sales">Sales</a></div>
+              <div class="b"><a href="/launcher">Launcher</a></div>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            <div>
+              <h1>our resources</h1>
+            </div>
+            <div class="flex">
+                  <div><a href="vk"> <img src="{% static 'main/img/foot-ds.png' %}" alt="discord" width="40px"> </a></div>
+                  <div><a href="inst"> <img src="{% static 'main/img/foot-tw.png' %}" alt="twitter" width="40px"> </a></div>
+                  <div><a href="twitt"> <img src="{% static 'main/img/foot-tele.png' %}" alt="telegram" width="40px"> </a></div>
+                  <div><a href="atom"> <img src="{% static 'main/img/foot-atom.png' %}" alt="atomic" width="40px"> </a></div>
+            </div>
+            <p>Copyright 2021 nfterritoria. All rights reserved.</p>
+          </footer>
+          <script src="{% static 'main/js/scroll.js' %}?{% cache_bust %}"></script>
+    </body>
+
+
+</html>

@@ -1,0 +1,1 @@
+python3 ./nfterritoria/manage.py runserver 35.215.50.122:8000
