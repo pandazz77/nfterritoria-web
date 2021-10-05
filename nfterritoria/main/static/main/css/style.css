@@ -101,8 +101,14 @@ header div.flex div.b a:hover{
 	font-size: 74px;
 	color: #fff;
 }
-section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .thirteen div.flex button p{
+section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-size: 39px;
+	color: #fff;
+	background: none;
+}
+ .thirteen div.flex button p{
+	font-family: sans-serif;
 	font-size: 39px;
 	color: #fff;
 	background: none;
@@ -981,6 +987,7 @@ section.five div.flex{
 	 margin-left: 30%;
 	 margin-right: 30%;
 	 margin-top: 15%;
+	 margin-bottom: 150%;
  }
  .thirteen div.flex button p{
 	margin-left: 8%;
@@ -1090,6 +1097,14 @@ footer p{
 		opacity:1;
 	}
 }
+@media (max-width: 1682px){
+	.section{
+		max-width: 970px;
+	}
+	.nine div.right_cont{
+		flex-basis: 60%;
+	}
+}
  @media (max-width: 1442px){
 	 .section{
 		 max-width: 970px;
@@ -1100,8 +1115,14 @@ footer p{
 		font-size: 74px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 39px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 39px;
 		color: #fff;
 		background: none;
@@ -1231,8 +1252,14 @@ footer p{
 		font-size: 60px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 30px;
 		color: #fff;
 		background: none;
@@ -1364,7 +1391,7 @@ footer p{
 	}
 
 }
-@media (max-width: 769px){
+@media (max-width: 854px){
 	.section{
 		max-width: 600;
 	}
@@ -1392,8 +1419,14 @@ footer p{
 		font-size: 60px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 25px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 25px;
 		color: #fff;
 		background: none;
@@ -1511,20 +1544,65 @@ footer p{
 		margin-bottom: 150px;
 	}
 	.twelve div.flex div.scale img.gif{
-		width: 210px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 		margin: 60px auto;
 	}
 	.twelve div.flex div.scale img.gif:hover{
-		transform: scale(1.1);
-		width: 210px;
-		height: 300px;
+		transform: scale(1.2);
+		width: 250px;
+		height: 250px;
 		margin: 60px auto;
 	}
 	.twelve div.flex div.box{
 		width: 450px;
 		height: 400px;
 	}
+	
+}
+@media (max-width: 642px){
+	.section{
+		max-width: 424px;
+	}
+	.nine div.right_cont{
+		flex-basis: 70%;
+	}
+	.nine div.flex div.left_cont div p{
+		font-size: 30px;
+	}
+	.nine div.flex div.right_cont div.token div.miners a{
+		font-size: 15px;
+	}
+	.nine div.flex div.right_cont div.token div.img img{
+		width: 40px;
+		padding-left: 50px;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
+		font-size: 20px;
+		color: #fff;
+		background: none;
+	}
+	header div.flex div.b a{
+		font-size: 18px;
+		transform: rotate(-15deg);
+	}
+	header div.flex div.logo img{
+		width: 102px;
+	}
+	header div.flex div.mess img{
+		width: 21px;
+	}
+	footer{
+		height: auto;
+	}
+	footer div.flex div img{
+		width: 40px;
+	}
+	footer div.flex div{
+		flex-basis: 8%;
+	}
+	
 }
 @media (max-width: 542px){
 	.section{
@@ -1555,8 +1633,14 @@ footer p{
 		font-size: 30px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total label.switch p, .ten div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total label.switch p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 15px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 15px;
 		color: #fff;
 		background: none;
@@ -1751,6 +1835,8 @@ footer p{
 	}
 	.seven div.right_cont div.token div.img img{
 		width: 35px;
+		margin-right: 0px; 
+		margin-left: 20px; 
 	}
 	.eight div.flex div.col_one div.img{
 		width: 150px;
@@ -1760,13 +1846,24 @@ footer p{
 	.eight div.flex div.b1{
 		margin: 25px 0;
 	}
+	.nine div.flex, .seven div.flex, .five div.flex{
+		margin-top: 25%;
+	}
 	.nine div.right_cont{
 		flex-basis: 70%;
 	}
-	.nine div.right_cont div.token div.img img{
-		width: 20px;
-		padding-left: 5px;
-		padding-top: 50px;
+	.nine div.flex div.left_cont div p, .seven div.flex div.left_cont div p{
+		font-size: 18px;
+	}
+	.nine div.flex div.right_cont div.token div.miners a{
+		font-size: 12px;
+	}
+	.nine div.flex div.right_cont div.token div.img img{
+		width: 40px;
+		padding-left: 10px;
+	}
+	.nine div.flex, .seven div.flex{
+		margin-left: 5px;
 	}
 	#start{
 		margin-right: 50%;
@@ -1800,14 +1897,17 @@ footer p{
 	.eleven div.flex div{
 		margin: 5px 0;		
 	}
+	.twelve p.sale{
+		margin-top: 28%;
+	}
 	.twelve div.flex div.scale img.gif{
-		width: 180px;
+		width: 190px;
 		height: 200px;
 		margin: 50px auto;
 	}
 	.twelve div.flex div.scale img.gif:hover{
-		transform: scale(1.1);
-		width: 180px;
+		transform: scale(1.2);
+		width: 190px;
 		height: 200px;
 		margin: 50px auto;
 	}
@@ -1840,7 +1940,7 @@ footer p{
 		margin-top: 20px;
 	}
 }
-@media (max-width: 376px){
+@media (max-width: 400px){
 	.section{
 		max-width: 200px;
 	}
@@ -1849,8 +1949,14 @@ footer p{
 		font-size: 30px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 12px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 12px;
 		color: #fff;
 		background: none;
@@ -1892,13 +1998,13 @@ footer p{
 		background: none;
 	}
 	header div.flex div.b a{
-		font-size: 12px;
+		font-size: 11px;
 	}
 	header div.flex div.logo img{
-		width:62px;
+		width: 80px;
 	}
 	header div.flex div.mess img{
-		width: 15px;
+		width: 14px;
 	}
 	.one div h1{
 		margin-top: 155px; 
@@ -1977,13 +2083,21 @@ footer p{
 	.eight div.flex div.b1{
 		margin: 25px 0;
 	}
-	.nine div.right_cont{
-		flex-basis: 80%;
+	.nine div.flex{
+		margin-bottom: 15%;
 	}
-	.nine div.right_cont div.token div.img img{
-		width: 20px;
-		padding-left: 5px;
-		padding-top: 50px;
+	.nine div.right_cont{
+		flex-basis: 75%;
+	}
+	.nine div.flex div.left_cont div p, .seven div.flex div.left_cont div p{
+		font-size: 18px;
+	}
+	.nine div.flex div.right_cont div.token div.miners a, .seven div.flex div.right_cont div.token div.miners a{
+		font-size: 10px;
+	}
+	.nine div.flex div.right_cont div.token div.img img{
+		width: 30px;
+		padding-left: 10px;
 	}
 	#start{
 		margin-right: 53%;
@@ -2021,8 +2135,14 @@ footer p{
 		font-size: 25px;
 		color: #fff;
 	}
-	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p, .ten div div.b2 p{
+	section a, p, .four div.float div button, .one div button, .six h1, .five div.total p{
 		font-family: 'Uni Sans Heavy Caps', sans-serif;
+		font-size: 10px;
+		color: #fff;
+		background: none;
+	}
+	.ten div.b2 p{
+		font-family: sans-serif;
 		font-size: 10px;
 		color: #fff;
 		background: none;
@@ -2147,20 +2267,30 @@ footer p{
 	.eight div.flex div.b1{
 		margin: 20px 0;
 	}
-	.nine div.right_cont div.token div.img img{
-		width: 10px;
-		padding-top: 20px;
-		margin: 0;
-	}
 	.nine div.flex{
-		margin-left: 10px;
+		margin-top: 28%;
+		margin-bottom: 15%;
+	}
+	.seven div.flex, .five div.flex{
+		margin-top: 28%;
 	}
 	.nine div.right_cont{
-		flex-basis: 70%;
+		flex-basis: 75%;
+	}
+	.nine div.flex div.left_cont div p, .seven div.flex div.left_cont div p{
+		font-size: 15px;
+	}
+	.nine div.flex div.right_cont div.token div.miners a, .seven div.flex div.right_cont div.token div.miners a{
+		font-size: 8px;
+	}
+	.nine div.flex div.right_cont div.token div.img img{
+		width: 25px;
+		margin-top: 0;
+		margin-right: -30px;
+		margin-left: 10px;
 	}
 	.seven div.right_cont div.token div.img img{
-		width: 20px;
-		margin-top: 80%;
+		width: 30px;	
 	}
 	.ten div.flex div.lb div p{
 		margin-right: 5%;
@@ -2182,4 +2312,16 @@ footer p{
 	.twelve div.flex div.bl div.a{
 		width: 220px;	
 	}
+	.twelve div.flex div.scale img.gif{
+		width: 150px;
+		height: 160px;
+		margin: 50px auto;
+	}
+	.twelve div.flex div.scale img.gif:hover{
+		transform: scale(1.2);
+		width: 150px;
+		height: 160px;
+		margin: 50px auto;
+	}
+	
 }
