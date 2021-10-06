@@ -4,9 +4,10 @@
 {% load cache_bust %}
 <html>
     <head>
-        <title>nfterritoria</title>
+        <title>NFTerritoria</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="{% static 'main/img/icon.ico' %}?{% cache_bust %}" type="image/x-icon">
         {% block imports %}{% endblock %}
     </head>
 
