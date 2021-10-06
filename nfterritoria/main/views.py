@@ -8,9 +8,6 @@ from django.http import HttpResponse, Http404
 def index(request):
     return render(request,'main/index.html')
 
-def map(request):
-    return render(request,'main/map.html')
-
 def getting_started(request):
     return render(request,'main/getting-started.html')
 
