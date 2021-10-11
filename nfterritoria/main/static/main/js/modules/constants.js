@@ -15,8 +15,8 @@ const TEMPLATE_IDS = {
     "furnace":292562,
     "founder":292564,
 
-    "whitelist":282851,
-    "territory16":289939,
+    "whitelist":292557,
+    "territory16":292567,
     "territory8":292566
 }
 
