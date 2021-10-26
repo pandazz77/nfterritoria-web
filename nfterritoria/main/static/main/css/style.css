@@ -877,13 +877,13 @@ section.five div.flex{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 20px 0;
+	margin: 20px 390px;
 	margin-bottom: 10%;	
 }
 .eleven div.flex div{
 	display: flex;
 	flex-direction: column;
-	margin: 10px 0;	
+	margin: 20px 0;	
 }
 /* <!-------------------------------------------------------------------------------------------------------------
 ------------------------------------------section.twelve---------------------------------------------------------------
@@ -1097,6 +1097,36 @@ footer p{
 		opacity:1;
 	}
 }
+@media (max-width: 2562px){
+	.section{
+		max-width: 2200px;
+	}
+	footer div.flex div img{
+		width: 60px;
+	}
+	footer div.flex div{
+		flex-basis: 3%;
+	}
+	footer p{
+		font-size: 13px;
+		margin-top: 0%;
+	}
+}
+@media (max-width: 1922px){
+	.section{
+		max-width: 1800px;
+	}
+	footer div.flex div img{
+		width: 60px;
+	}
+	footer div.flex div{
+		flex-basis: 3%;
+	}
+	footer p{
+		font-size: 13px;
+		margin-top: 2%;
+	}
+}
 @media (max-width: 1682px){
 	.section{
 		max-width: 970px;
@@ -1109,8 +1139,11 @@ footer p{
 	 .section{
 		 max-width: 970px;
 	 }
-	
-	 section div h1{
+	.eleven div.flex{
+		margin: 20px 200px;
+		margin-bottom: 10%;	
+	}
+	section div h1{
 		font-family: 'MineCrafter 3', sans-serif;
 		font-size: 74px;
 		color: #fff;
@@ -1236,6 +1269,10 @@ footer p{
  @media (max-width: 1025px){
 	.section{
 		max-width: 750px;
+	}
+	.eleven div.flex{
+		margin: 20px 70px;
+		margin-bottom: 10%;	
 	}
 	.thirteen div.flex{
 		display: flex;
@@ -1394,6 +1431,10 @@ footer p{
 @media (max-width: 854px){
 	.section{
 		max-width: 600;
+	}
+	.eleven div.flex{
+		margin: 20px 120px;
+		margin-bottom: 10%;	
 	}
 	.thirteen div.flex{
 		display: flex;
@@ -1563,6 +1604,13 @@ footer p{
 @media (max-width: 642px){
 	.section{
 		max-width: 424px;
+	}
+	.eleven div.flex div{
+		margin: 10px 0;	
+	}
+	.eleven div.flex{
+		margin: 10px 50px;
+		margin-bottom: 10%;	
 	}
 	.nine div.right_cont{
 		flex-basis: 70%;
