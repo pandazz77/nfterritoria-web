@@ -1120,11 +1120,11 @@ footer p{
 		width: 60px;
 	}
 	footer div.flex div{
-		flex-basis: 3%;
+		flex-basis: 4%;
 	}
 	footer p{
 		font-size: 13px;
-		margin-top: 2%;
+		margin-top: 1%;
 	}
 }
 @media (max-width: 1682px){
