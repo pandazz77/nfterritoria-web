@@ -239,7 +239,8 @@ section.five div.flex{
 -------------------------------------------------------------------------------------------------------------->
  */
 .three div h1{
-	 margin-bottom: 10%;
+	 margin-bottom: 5%;
+	 padding-top: 2%;
  }
 .three div div.lore{
 	 margin-bottom: 5%;
