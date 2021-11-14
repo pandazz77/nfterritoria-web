@@ -1,5 +1,10 @@
 const wax = new waxjs.WaxJS(API);
 
+// sleep time expects milliseconds
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function login() {
   // try {
     const userAccount = await wax.login();
@@ -145,6 +150,13 @@ async function get_tokens_amount(){
   document.getElementById("Founder").textContent = tokens["FDTERR"];
 }
 
+async function reload_data(){
+  get_whitelist();
+  get_stored_tokens();
+  get_nfts_info();
+  get_tokens_amount();
+}
+
 ///////////// STAKING ////////////////
 
 async function stake_chicken(){
@@ -198,7 +210,15 @@ async function stake(asset_name){
   const assets = await get_assets(COLLECTION,TEMPLATE_IDS[asset_name])
   const assets_for_transfer = [assets[0]]
   console.log("assets_for_transfer: " + assets_for_transfer)
-  const result = await transfer_assets(assets_for_transfer)
+  try{
+    const result = await transfer_assets(assets_for_transfer)
+  }catch(e){
+    Swal.fire(
+      "WaxApi error!",
+      "Please check your Wax resources.",
+      "error"
+  )
+  }
   console.log(result)
   
   json_result = JSON.parse(result)
@@ -279,9 +299,13 @@ async function craft(asset_name){
   )
   await send_data_to_ws(JSON.stringify(data_for_ws));
   return console.log(result);
-
 }
 
 async function loop_info(){
-  
+  while(true){
+    await sleep(LOOP_SLEEP);
+    reload_data();
+  }
 }
+
+loop_info();
