@@ -59,7 +59,7 @@ async function get_assets(collection_name,template_id){
       table_key:"",
       upper_bound:""
     }
-    var assets_data = await sendRequest("POST",API+"/v2/chain/get_table_rows",body)
+    var assets_data = await sendRequest("POST",API+"/v1/chain/get_table_rows",body)
     console.log("json_response:")
     console.log(assets_data)
     for(const row of assets_data["rows"]){
@@ -79,7 +79,7 @@ async function get_tokens(){
         return document.getElementById('account'.textContent = '* Login first *');
     }
 
-    const tokens_data = await sendRequest("GET",tAPI+"/v1/state/get_tokens?account="+wax.userAccount);
+    const tokens_data = await sendRequest("GET",tAPI+"/v2/state/get_tokens?account="+wax.userAccount);
     return tokens_data["tokens"];
 }
 
