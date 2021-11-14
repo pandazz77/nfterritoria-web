@@ -151,6 +151,7 @@ async function get_tokens_amount(){
 }
 
 async function reload_data(){
+  console.log("reloading data");
   get_whitelist();
   get_stored_tokens();
   get_nfts_info();
