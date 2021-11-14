@@ -152,10 +152,10 @@ async function get_tokens_amount(){
 
 async function reload_data(){
   console.log("reloading data");
-  get_whitelist();
-  get_stored_tokens();
-  get_nfts_info();
-  get_tokens_amount();
+  await get_whitelist();
+  await get_stored_tokens();
+  await get_nfts_info();
+  await get_tokens_amount();
 }
 
 ///////////// STAKING ////////////////
@@ -305,7 +305,8 @@ async function craft(asset_name){
 async function loop_info(){
   while(true){
     await sleep(LOOP_SLEEP);
-    reload_data();
+    if(!wax.api | !wax.userAccount){}
+    else await reload_data();
   }
 }
 
