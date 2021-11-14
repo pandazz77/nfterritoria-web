@@ -59,7 +59,7 @@ async function get_assets(collection_name,template_id){
       table_key:"",
       upper_bound:""
     }
-    var assets_data = await sendRequest("POST",API+"/v1/chain/get_table_rows",body)
+    var assets_data = await sendRequest("POST",API+"/v2/chain/get_table_rows",body)
     console.log("json_response:")
     console.log(assets_data)
     for(const row of assets_data["rows"]){
