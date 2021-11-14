@@ -79,7 +79,7 @@ async function get_tokens(){
         return document.getElementById('account'.textContent = '* Login first *');
     }
 
-    const tokens_data = await sendRequest("GET",tAPI+"/v2/state/get_tokens?account="+wax.userAccount);
+    const tokens_data = await sendRequest("GET",tAPI+"/v1/state/get_tokens?account="+wax.userAccount);
     return tokens_data["tokens"];
 }
 
