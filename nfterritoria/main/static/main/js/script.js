@@ -155,7 +155,7 @@ async function reload_data(){
   await get_whitelist();
   await get_stored_tokens();
   await get_nfts_info();
-  await get_tokens_amount();
+  await  get_tokens_amount();
 }
 
 ///////////// STAKING ////////////////
@@ -213,36 +213,35 @@ async function stake(asset_name){
   console.log("assets_for_transfer: " + assets_for_transfer)
   try{
     const result = await transfer_assets(assets_for_transfer)
+    console.log(result)
+
+    json_result = JSON.parse(result)
+    Swal.fire(
+      'Successefully transferred! Save transaction id:',
+      json_result["transaction_id"],
+      'success'
+    )
+    var type = "transferred_assets";
+    if(asset_name=="whitelist") type = "whitelist_user";
+    else if(asset_name.includes("territory")) type = "stake_territory";
+
+    data_for_ws = {
+      "type":type,
+      "asset_id":assets_for_transfer[0],
+      "transaction_id":json_result["transaction_id"],
+      "account":wax.userAccount,
+      "item":ITEM_NAMES[asset_name]
+    }
+
+    await send_data_to_ws(JSON.stringify(data_for_ws))
+    return console.log(result);
   }catch(e){
     Swal.fire(
-      "WaxApi error!",
+      "Error!",
       "Please check your Wax resources.",
       "error"
   )
   }
-  console.log(result)
-  
-  json_result = JSON.parse(result)
-  Swal.fire(
-    'Successefully transferred! Save transaction id:',
-    json_result["transaction_id"],
-    'success'
-  )
-  var type = "transferred_assets";
-  if(asset_name=="whitelist") type = "whitelist_user";
-  else if(asset_name.includes("territory")) type = "stake_territory";
-
-  data_for_ws = {
-    "type":type,
-    "asset_id":assets_for_transfer[0],
-    "transaction_id":json_result["transaction_id"],
-    "account":wax.userAccount,
-    "item":ITEM_NAMES[asset_name]
-  }
-
-  await send_data_to_ws(JSON.stringify(data_for_ws))
-  return console.log(result);
-}
 
 ///////////// CRAFTING ////////////////
 
