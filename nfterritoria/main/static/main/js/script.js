@@ -242,6 +242,7 @@ async function stake(asset_name){
       "error"
   )
   }
+}
 
 ///////////// CRAFTING ////////////////
 
