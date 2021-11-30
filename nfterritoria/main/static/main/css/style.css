@@ -936,7 +936,7 @@ section.five div.flex{
 	padding: 1%;
 	margin: 0 10%;
 	margin-top: 5%;
-	margin-bottom: 20%;
+	margin-bottom: 50%;
 	padding-right: 5%;
 	padding-left: 5%;
 }
@@ -1993,6 +1993,9 @@ footer p{
 	.section{
 		max-width: 200px;
 	}
+	.twelve div.flex{
+		margin-bottom: 70%;
+		}
 	section div h1{
 		font-family: 'MineCrafter 3', sans-serif;
 		font-size: 30px;
@@ -2171,6 +2174,9 @@ footer p{
 	.section{
 		max-width: 150px;
 	}
+	.twelve div.flex{
+		margin-bottom: 95%;
+		}
 	.thirteen div.flex button p{
 		font-size: 12px;
 	}
