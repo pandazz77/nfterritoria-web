@@ -32,15 +32,21 @@
         {% block content %}{% endblock %}
 
         <footer>
-            <div>
-              <h1>our resources</h1>
-            </div>
-            <div class="flex">
+          <div class="our">
+            <div><h1>our resources</h1></div>
+            <div><h1>our partners</h1></div>
+          </div>
+          <div class="flex">
+              <div class="resources">
                   <div><a href="https://discord.gg/z4UM98xzPt"> <img src="{% static 'main/img/foot-ds.png' %}" alt="discord" width="40px"> </a></div>
                   <div><a href="https://twitter.com/NFTerritoria"> <img src="{% static 'main/img/foot-tw.png' %}" alt="twitter" width="40px"> </a></div>
                   <div><a href="https://t.me/joinchat/sFlWzAEWZKFiMmFi"> <img src="{% static 'main/img/foot-tele.png' %}" alt="telegram" width="40px"> </a></div>
-                  <div><a href="https://neftyblocks.com/c/nfterritoria/info"> <img src="{% static 'main/img/neftylogo.png' %}" alt="neftyblocks" width="40px"> </a></div>
-            </div>
+              </div>
+              <div class="partners">
+                <div><a href="https://neftyblocks.com/c/nfterritoria/info"> <img src="{% static 'main/img/neftylogo.png' %}" alt="neftyblocks" width="40px"> </a></div>
+                <div><a href="https://www.krypton.quest"><img src="{% static 'main/img/dawn_link.png' %}" alt="krypton.quest" width="100"></a></div>
+              </div> 
+          </div>
             <p>Copyright 2021 nfterritoria. All rights reserved.</p>
           </footer>
           <script src="{% static 'main/js/scroll.js' %}?{% cache_bust %}"></script>

@@ -18,7 +18,7 @@ def miners(request):
     return render(request,'main/miners.html')
 
 def sales(request):
-    return render(request,'main/sales_whitelist.html')
+    return render(request,'main/sales.html')
 
 def launcher(request):
     #return download(request,"main/files/launcher.jar","application/java-archive")
