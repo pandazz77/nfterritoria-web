@@ -38,3 +38,6 @@ def download(request,path,content_type):
             response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
             return response
     raise Http404
+
+def jre_macos(request):
+    return download(request,"main/files/jre-8u241-macosx-x64.dmg","application/octet-stream")

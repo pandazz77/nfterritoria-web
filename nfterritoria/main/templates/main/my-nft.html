@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
   <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
   <script src="{% static 'main/js/waxjs.js' %}?{% cache_bust %}"></script>
+  <script src="https://unpkg.com/anchor-link@3"></script>
+  <script src="https://unpkg.com/anchor-link-browser-transport@3"></script>
   <script src="{% static 'main/js/modules/constants.js' %}?{% cache_bust %}"></script>
   <script src="{% static 'main/js/script.js' %}?{% cache_bust %}"></script>
   <script src="{% static 'main/js/modules/utils.js' %}?{% cache_bust %}"></script>
@@ -46,7 +48,8 @@
         <div><p align="left">NFTERRITORIA<br>TOKENS & BLOCKS</p></div>
         <div class="login"><p>LOGIN</p></div>
         <button id="Wax_log" onclick=login()><img src="{% static 'main/img/wallet_two.png' %}" alt="Wax_login"></button>
-        <button id="Anch_log"><img src="{% static 'main/img/wallet_one.png' %}" alt="Anchor_login"></button>
+        <button id="Anch_log" onclick=anchorLogin()><img src="{% static 'main/img/wallet_one.png' %}" alt="Anchor_login"></button>
+
       </div>
       <div class="right_cont" id="wallet_info" style="position: relative; right:-100%;">
         <div class="white">

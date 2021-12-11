@@ -10,5 +10,6 @@ urlpatterns = [
     path('sales',views.sales),
     path('launcher',views.launcher),
     path('download-launcher',views.download_launcher),
-    path('client',views.client)
+    path('client',views.client),
+    path("jre-macos",views.jre_macos)
 ]
