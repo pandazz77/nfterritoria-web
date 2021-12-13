@@ -1,0 +1,37 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% load cache_bust %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{% static 'main/css/reset.css' %}?{% cache_bust %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}?{% cache_bust %}">
+    <style>
+      @font-face {
+       font-family: 'Impact';
+       src: url(../shrift/Impact.ttf) ;
+       src: url(../shrift/Impact.eot);
+       src: url(../shrift/Impact.eot?#iefix) format('embedded-opentype'),
+       url(../shrift/Impact.woff2) format('woff2'),
+       url(../shrift/Impact.woff) format('woff'),
+       url(../shrift/Impact.svg#Impact) format('svg');
+      }
+      marquee{
+       font-family: 'Impact';
+       color: #fff;
+      }
+     </style>
+{% endblock %}
+
+{% block content %}
+  <section class="twelve">
+      <p class="sale">Sales</p>
+      <div class="fon">
+        <p>Miners sale | Round one</p>     
+      </div>
+      <div class="flex white_list scale">
+        <div class="box scale"><img src="../../static/main/img/miners.png" class="gif"></div>
+          </style>
+        <div class="bl"><div class="p"><p>Block name:</p><br><marquee direction="right" height="100" width="630" bg="none" style="font-size: 50px">Chicken miner&emsp;Pig miner&emsp;Cow miner&emsp;Ocelot miner&emsp;Redstone miner&emsp;Furnace miner&emsp;Founder miner</marquee></div><div class="p"><p>More information:</p><br><p>Miners is NTF's that produces tokens. Tokens are used to craft new NFT's.</p></div><div class="a"><a href="https://neftyblocks.com/c/nfterritoria/drops/81346+81347+81356+81361+81365+81366+81367">Sale page</a></div></div>
+      </div>
+  </section>
+{% endblock %}
