@@ -1,6 +1,6 @@
 const ACCOUNT_NAME = "nfterritoria";
 const TOKENS_ACCOUNT_NAME = "nfterritoria";
-const API = "https://api.waxsweden.org"; //const API = "https://wax.greymass.com";
+const API = "https://wax.eu.eosamsterdam.net"; //const API = "https://wax.greymass.com";
 const tAPI = "https://wax.eu.eosamsterdam.net" // Api for get_tokens()
 const WEBSOCKET = "wss://nfterritoria.com/websocket";
 
