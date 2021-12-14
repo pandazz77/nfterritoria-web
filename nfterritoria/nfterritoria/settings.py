@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7*s+--ysuem+rtsu29mzf8w(l^ry0vp-*)k)2&*f-!57zl&#&7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["192.168.1.64","35.215.50.122","nfterritoria.com","0.0.0.0","127.0.0.1"]
 
@@ -128,4 +128,4 @@ MAIN_STATIC_ROOT = os.path.join(BASE_DIR,"main/static")
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-PROJECT_VERSION = "0.0042"
+PROJECT_VERSION = "0.0043"

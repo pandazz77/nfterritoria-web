@@ -32,7 +32,7 @@ async function transact(data){
     return new Promise((resolve) => setTimeout(resolve, time));
   }
   if(wax.api || wax.userAccount){
-    const result = wax.api.transact(data,{
+    const result = await wax.api.transact(data,{
       blocksBehind: 3,
       expireSeconds: 90
     })
