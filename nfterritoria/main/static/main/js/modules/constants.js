@@ -25,7 +25,7 @@ const TEMPLATE_IDS = {
 const ITEM_NAMES = {
     "chicken":"nft:chicken",
     "pig":"nft:pig",
-    "cow":"nft:pig",
+    "cow":"nft:cow",
     "ocelot":"nft:ocelot",
     "redstone":"nft:redstone",
     "furnace":"nft:furnace",
