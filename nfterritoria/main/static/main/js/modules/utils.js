@@ -36,15 +36,7 @@ async function transact(data){
       blocksBehind: 3,
       expireSeconds: 90
     })
-    while(c<TRANSACTION_WAIT_TIME){
-      await sleep(1000);
-      if(typeof result === typeof {1:1} && typeof result !== null){
-        return JSON.stringify(result);
-      }
-      console.log("sleeping...");
-      c++;
-      
-    }
+    return JSON.stringify(result);
   }
   if(session){
     let c = 0;

@@ -132,7 +132,7 @@ async function get_new_passphrase(){
       }]
     }
 
-    const transaction_result = transact(passphrase_wax_actions);
+    const transaction_result = await transact(passphrase_wax_actions);
     const json_result = JSON.parse(transaction_result);
 
     if(session){
