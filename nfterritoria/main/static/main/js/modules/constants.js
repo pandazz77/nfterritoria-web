@@ -5,6 +5,7 @@ const tAPI = "https://wax.eu.eosamsterdam.net" // Api for get_tokens()
 const WEBSOCKET = "wss://nfterritoria.com/websocket";
 
 const LOOP_SLEEP = 30000; //ms
+const TRANSACTION_WAIT_TIME = 240; //s
 
 const COLLECTION = "nfterritoria";
 

@@ -36,7 +36,15 @@ async function transact(data){
       blocksBehind: 3,
       expireSeconds: 90
     })
-    return JSON.stringify(result);
+    while(c<TRANSACTION_WAIT_TIME){
+      await sleep(1000);
+      if(typeof result === typeof {1:1} && typeof result !== null){
+        return JSON.stringify(result);
+      }
+      console.log("sleeping...");
+      c++;
+      
+    }
   }
   if(session){
     let c = 0;
@@ -46,7 +54,7 @@ async function transact(data){
     session.transact({actions}).then((result) => {
       transaction_result = JSON.stringify(result.processed)
     })
-    while(c<240){
+    while(c<TRANSACTION_WAIT_TIME){
       await sleep(1000);
       if(transaction_result) return transaction_result;
       console.log("sleeping...")
