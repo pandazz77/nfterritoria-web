@@ -108,11 +108,44 @@ async function get_stored_tokens(){
 
 async function get_new_passphrase(){
   if(wax.api || wax.userAccount ||session) {
-    var passphrase = await randomString(8);
+    let passphrase = await randomString(8);
+
+    // proof
+
+    if(wax.api) authorization = [{
+      actor: wallet_name.textContent,
+      permission: 'active',
+    }]
+    if(session) authorization = [session.auth]
+
+    const passphrase_wax_actions = {
+      actions: [{
+        account: "eosio.token",
+        name: "transfer",
+        authorization: authorization,
+        data: {
+          from: wallet_name.textContent,
+          to: ACCOUNT_NAME,
+          quantity: "0.00000001 WAX",
+          memo: "GetNewPassphrase"
+        }
+      }]
+    }
+
+    const transaction_result = transact(passphrase_wax_actions);
+    const json_result = JSON.parse(transaction_result);
+
+    if(session){
+      transaction_id = json_result["id"]
+    } else if(wax.api){
+      transaction_id = json_result["transaction_id"]
+    }
+
     data_for_ws = {
       "type":"register_user",
       "user_name":wallet_name.textContent,
-      "phrase":passphrase
+      "phrase":passphrase,
+      "transaction_id": transaction_id
     }
     await send_data_to_ws(JSON.stringify(data_for_ws))
     
