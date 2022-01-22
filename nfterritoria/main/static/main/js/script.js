@@ -6,6 +6,15 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+autoLogin()
+async function autoLogin() { 
+  var isAutoLoginAvailable = await wax.isAutoLoginAvailable(); 
+  console.log(isAutoLoginAvailable)
+  if (isAutoLoginAvailable) { 
+  login(); 
+  } 
+} 
+
 async function login() {
   // try {
     const userAccount = await wax.login();
